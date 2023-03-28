@@ -1,0 +1,23 @@
+{
+  "name": "@my-monorepo/c",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": {
+      "default": "./index.js"
+    },
+    "./index.js": {
+      "default": "./index.js"
+    },
+    "./base-style.js": {
+      "default": "./base/base-style.js"
+    }
+  },
+  "dependencies": {
+    "lit": "^2.2.7",
+    "tslib": "^2.4.0",
+    "typescript": "^5.0.2"
+  },
+  "version": "0.0.1",
+  "license": "MIT"
+}

@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./packages",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "isolatedModules": true,
+    "lib": ["es2018", "dom", "dom.iterable"],
+    "module": "esNext",
+    "moduleResolution": "node",
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "rootDir": ".",
+    "skipLibCheck": true,
+    "strict": true,
+    // 生产出每个文件对应的 sourceMap
+    "sourceMap": false,
+    "inlineSources": false,
+    "target": "es2018",
+    // 以下3行，采用增量编译，将生成 .buildinfo 文件，并保存到指定目录
+    "incremental": true,
+    "tsBuildInfoFile": "./buildcache/packages",
+    "outDir": "./lib"
+  }
+}

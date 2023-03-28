@@ -1,0 +1,15 @@
+{
+  "name": "@my-monorepo/a",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": {
+      "default": "./index.js"
+    },
+    "./index.js": {
+      "default": "./index.js"
+    }
+  },
+  "version": "0.0.1",
+  "license": "MIT"
+}

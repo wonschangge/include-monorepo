@@ -1,0 +1,20 @@
+{
+  "name": "my-monorepo",
+  "type": "module",
+  "scripts": {
+    "build": "yarn run esbuild:ts && yarn run build:ts",
+    "build:ts": "yarn tsc --build tsconfig-all.json",
+    "esbuild:ts": "node ./tasks/esbuild-packages.js"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "esbuild": "^0.17.14",
+    "fast-glob": "^3.2.12",
+    "typescript": "^5.0.2"
+  },
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT"
+}
